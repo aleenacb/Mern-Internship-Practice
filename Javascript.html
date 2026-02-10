@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="myId">   JavaScript Output Statements</h2>
+    <script>
+        console.log("Hello World");
+        /*document.write("Welcome to my Javascript web page");
+        alert("Hii");*/
+        document.getElementById("myId").innerHTML = "Hello JS";
+    </script>
+    <p id="data"></p>
+    <button onclick="myfunc()">Change</button>
+    <hr>
+    <script>
+        function myfunc() {
+            document.getElementById("data").innerHTML="Text added";
+        }
+    </script>
+    <br>
+    <!-- datatypes -->
+     <script>
+        let num = 9;
+        document.write(num+"<br>");
+        var array = [1, 2, 3, 4, 5];
+        document.write(array+"<br>");
+        const name = "Aleena";
+        var userLogin = true;
+        const object = {name: "Aleena", email: "aleenacbenoy@gmail.com", phone: 8310342938};
+        //document.write(num + "<br>" + array + "<br>" + name + "<br>" + userLogin + "<br>" + object);
+        console.log(typeof name);
+        document.write(userLogin + "<br>");
+        document.write(JSON.stringify(object));
+     </script>
+     <script>
+        //Arithmetic operator
+        let a = 10;
+        let b = 20;
+        let c = a + b;
+        console.log(c);
+        //Assignment operator
+        let d = 2;
+        let e = 5;
+        let assign = d += e;
+        console.log(assign);
+        let temp = 35;
+        if(temp > 35) {
+            console.log("Its very hot");
+        } else if (temp > 25) {
+            console.log("It's warm");
+        } else {
+            console.log("Its cold");
+        }
+        let count = 0;
+        while(count < 3) {
+            console.log("count :" +count);
+            count++;
+        }
+     </script>
+</body>
+</html>
